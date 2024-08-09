@@ -1,0 +1,10 @@
+{% extends 'challenges/base.html' %}
+
+{% block title %}All challenges{% endblock %}
+{% block content %}
+    <ul>
+        {% for m in months %}
+            <li><a href="{% url 'mouth_challenge' m%}">{{ m|title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
