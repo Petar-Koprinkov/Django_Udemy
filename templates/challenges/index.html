@@ -1,5 +1,9 @@
 {% extends 'challenges/base.html' %}
+{% load static %}
 
+{% block static_file %}
+    <link rel="stylesheet" href="{% static 'css/style_ul.css' %}"/>
+{% endblock %}
 {% block title %}All challenges{% endblock %}
 {% block content %}
     <ul>
